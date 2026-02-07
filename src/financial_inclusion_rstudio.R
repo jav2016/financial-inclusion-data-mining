@@ -1,14 +1,10 @@
 # =============================================================================
 # Financial Inclusion Analysis - Data Mining Project (CMP7206)
 # RStudio Interactive Version - Plots display in Plots pane
-# Authors: Javeria Butt, Hassam Haider, MitKumar
+# Authors: Javeria Butt
 # University: Birmingham City University
 # Date: December 2025
 # =============================================================================
-
-# INSTRUCTIONS: Run this script section by section in RStudio (Ctrl+Enter)
-# Or run entire script with Ctrl+Shift+Enter
-
 # -----------------------------------------------------------------------------
 # 1. LOAD REQUIRED LIBRARIES
 # -----------------------------------------------------------------------------
