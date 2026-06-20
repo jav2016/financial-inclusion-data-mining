@@ -1,37 +1,38 @@
-Financial Inclusion – Data Mining Project
+# Financial Inclusion - Data Mining Project
 
-This repository presents a data mining project that analyses the determinants of financial inclusion using supervised classification techniques in R. The focus is on understanding which factors are most strongly associated with financial account ownership in high-income economies.
+This is my MSc Data Mining project about financial inclusion in high-income economies.
 
-Project Overview
-Financial inclusion plays a key role in economic participation and access to formal financial services. This project applies data mining methods to identify patterns and predictors of account ownership using survey-based indicators related to demographics, digital access, and financial behaviour.
+The aim was to use R to explore which factors are linked with financial account ownership.
 
-The analysis was conducted as part of an MSc Data Mining module and is presented here as a professional portfolio representation.
+## Data
 
-Dataset (not included)
-- Source: World Bank – Global Findex Database (2025 edition)
-- Survey year: 2024
-- Scope used in analysis:
-  - 2,630 observations
-  - 51 high-income countries
-  - United Kingdom subset included for comparison
+The script builds the dataset from the World Bank Global Findex / Data360 files.
 
-> The raw dataset is not uploaded to this repository due to licensing, size, and academic integrity considerations.
+The raw dataset is not uploaded here because it is better to download it from the official source when running the script.
 
-Methods
-The following supervised classification models were implemented and evaluated:
+## What I used
 
-- K-Nearest Neighbours (KNN)
+- R / RStudio
+- World Bank Global Findex indicators
+- KNN
 - Decision Tree
 - Random Forest
+- Confusion matrices and model comparison
 
-Model performance was assessed using train/test split, cross-validation, accuracy, and Cohen’s Kappa.
+## Main Files
 
-Key Results (high-level)
-- Decision Tree and Random Forest achieved very high predictive accuracy (≈99.8%)
-- KNN also performed strongly with accuracy above 99%
-- The UK showed a higher rate of account ownership compared to the average of other high-income economies
-- Digital and behavioural indicators were among the most influential predictors in tree-based models
+- `src/financial_inclusion_rstudio.R` - main R script
+- `outputs/` - selected figures from the analysis
+- `docs/executive_summary.pdf` - short project summary
 
-Detailed visual outputs are provided in the `outputs/` folder.
+## How to Run
 
-Repository Structure
+Open `src/financial_inclusion_rstudio.R` in RStudio and run the script section by section.
+
+The script installs missing R packages, downloads the data, prepares the modelling dataset, and then runs the models.
+
+## Notes
+
+The model results should be treated as coursework analysis, not as a real financial prediction system.
+
+One older diabetes lab notebook is still in this repo at the moment. It is not part of this financial inclusion project and should be removed or moved later.
